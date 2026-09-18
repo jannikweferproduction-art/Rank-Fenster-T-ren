@@ -855,6 +855,31 @@ p { max-width: 65ch; overflow-wrap: break-word; }
   padding-block: clamp(3rem, 2.5rem + 3vw, 5.5rem) clamp(2rem, 1.8rem + 1vw, 3rem);
   border-bottom: 1px solid var(--line);
 }
+/* Foto-Variante: Fenster/Rollladen/Haustür-Panorama als ruhiger,
+   heller Hintergrund auf den 4 Unterseiten-Köpfen (Leistungen, Über
+   uns, Referenzen, Kontakt). Startseite und Rechtsseiten bleiben ohne
+   Foto. Rein dekorativ, daher kein <img> und kein Alt-Text. */
+.page-header--photo {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(244, 245, 246, 0.98) 0%,
+      rgba(244, 245, 246, 0.94) 52%,
+      rgba(244, 245, 246, 0.66) 72%,
+      rgba(244, 245, 246, 0.22) 100%
+    ),
+    url("../img/unterseiten-header.webp") center right / cover no-repeat;
+}
+@media (max-width: 768px) {
+  .page-header--photo {
+    background:
+      linear-gradient(
+        rgba(244, 245, 246, 0.93),
+        rgba(244, 245, 246, 0.93)
+      ),
+      url("../img/unterseiten-header.webp") 78% center / cover no-repeat;
+  }
+}
 .breadcrumb {
   display: flex;
   align-items: center;
