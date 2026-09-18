@@ -37,7 +37,7 @@
       if (event.key === 'Escape') closeNav();
     });
 
-    var mqDesktop = window.matchMedia('(min-width: 1024px)');
+    var mqDesktop = window.matchMedia('(min-width: 1140px)');
     mqDesktop.addEventListener('change', function (event) {
       if (event.matches) closeNav();
     });

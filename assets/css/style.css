@@ -345,11 +345,11 @@ p { max-width: 65ch; overflow-wrap: break-word; }
 .nav-primary {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .nav-primary {
     display: flex;
     align-items: center;
-    gap: 1.1rem;
+    gap: 1.25rem;
     flex: 1;
     justify-content: center;
   }
@@ -359,6 +359,8 @@ p { max-width: 65ch; overflow-wrap: break-word; }
     color: var(--ink-700);
     position: relative;
     padding-block: 0.35rem;
+    white-space: nowrap;
+    flex: none;
   }
   .nav-primary a::after {
     content: "";
@@ -380,8 +382,25 @@ p { max-width: 65ch; overflow-wrap: break-word; }
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.9rem;
   flex: none;
+}
+
+.header-phone {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink-800);
+  white-space: nowrap;
+}
+.header-phone svg { width: 1.05em; height: 1.05em; color: var(--accent); flex: none; }
+@media (min-width: 1280px) {
+  .header-phone { display: inline-flex; }
+}
+@media (hover: hover) and (pointer: fine) {
+  .header-phone:hover { color: var(--accent-600); }
 }
 
 .header-actions .btn-primary { display: none; }
@@ -400,7 +419,7 @@ p { max-width: 65ch; overflow-wrap: break-word; }
   border-radius: var(--radius-control);
   touch-action: manipulation;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .nav-toggle { display: none; }
 }
 .nav-toggle svg { width: 20px; height: 20px; }
@@ -425,7 +444,7 @@ p { max-width: 65ch; overflow-wrap: break-word; }
   transform: translateY(0);
   pointer-events: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1140px) {
   .nav-mobile { display: none; }
 }
 .nav-mobile a {
