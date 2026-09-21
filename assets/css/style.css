@@ -683,10 +683,11 @@ p { max-width: 65ch; overflow-wrap: break-word; }
 }
 @media (min-width: 900px) {
   .process-step {
-    padding: 0 1.5rem 0 0;
+    padding: 0 1.5rem;
     border-bottom: none;
     border-right: 1px solid var(--line);
   }
+  .process-step:first-child { padding-left: 0; }
   .process-step:last-child { border-right: none; padding-right: 0; }
 }
 .process-step .num {
