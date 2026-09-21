@@ -388,9 +388,9 @@ p { max-width: 65ch; overflow-wrap: break-word; }
 
 .header-phone {
   display: none;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.92rem;
-  color: var(--ink-800);
+  color: var(--ink-900);
   white-space: nowrap;
 }
 @media (min-width: 1280px) {
