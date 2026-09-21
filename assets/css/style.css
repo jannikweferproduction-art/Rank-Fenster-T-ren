@@ -388,16 +388,13 @@ p { max-width: 65ch; overflow-wrap: break-word; }
 
 .header-phone {
   display: none;
-  align-items: center;
-  gap: 0.4rem;
   font-weight: 700;
   font-size: 0.92rem;
   color: var(--ink-800);
   white-space: nowrap;
 }
-.header-phone svg { width: 1.05em; height: 1.05em; color: var(--accent); flex: none; }
 @media (min-width: 1280px) {
-  .header-phone { display: inline-flex; }
+  .header-phone { display: inline-block; }
 }
 @media (hover: hover) and (pointer: fine) {
   .header-phone:hover { color: var(--accent-600); }
@@ -887,7 +884,7 @@ p { max-width: 65ch; overflow-wrap: break-word; }
       rgba(244, 245, 246, 0.66) 72%,
       rgba(244, 245, 246, 0.22) 100%
     ),
-    url("../img/unterseiten-header.webp") center right / cover no-repeat;
+    url("../img/unterseiten-header.webp") top right / cover no-repeat;
 }
 @media (max-width: 768px) {
   .page-header--photo {
@@ -896,7 +893,7 @@ p { max-width: 65ch; overflow-wrap: break-word; }
         rgba(244, 245, 246, 0.93),
         rgba(244, 245, 246, 0.93)
       ),
-      url("../img/unterseiten-header.webp") 78% center / cover no-repeat;
+      url("../img/unterseiten-header.webp") 78% top / cover no-repeat;
   }
 }
 .breadcrumb {
